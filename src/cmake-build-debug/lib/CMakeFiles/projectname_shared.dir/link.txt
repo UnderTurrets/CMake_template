@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libprojectname_shared.so -o libprojectname_shared.so CMakeFiles/projectname_shared.dir/filename/filename.cpp.o 
