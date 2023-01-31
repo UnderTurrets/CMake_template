@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o  -o main 
+/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o  -o main  -l./build/bin/libprojectname_shared.so 
