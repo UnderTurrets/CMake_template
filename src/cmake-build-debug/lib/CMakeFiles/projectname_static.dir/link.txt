@@ -1,2 +1,0 @@
-/usr/bin/ar qc libprojectname_static.a CMakeFiles/projectname_static.dir/filename/filename.cpp.o
-/usr/bin/ranlib libprojectname_static.a
