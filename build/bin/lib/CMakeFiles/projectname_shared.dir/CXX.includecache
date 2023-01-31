@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xu736946693/Desktop/ProjectTemplate/src/lib/filename/filename.cpp
+filename.h
+/home/xu736946693/Desktop/ProjectTemplate/src/lib/filename/filename.h
+
+/home/xu736946693/Desktop/ProjectTemplate/src/lib/filename/filename.h
+iomanip
+-
+fstream
+-
+iostream
+-
+exception
+-
+memory
+-
+functional
+-
+exception
+-
+cmath
+-
+climits
+-
+bits/stdc++.h
+-
+

@@ -1,5 +1,6 @@
 #include<projectname.h>
 int main(){
+    hello();
 
 
 
