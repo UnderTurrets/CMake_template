@@ -8,12 +8,12 @@ SET(LIB_LIST projectname.h
 ADD_LIBRARY(projectname_static STATIC ${LIB_LIST} )
 SET_TARGET_PROPERTIES(projectname_static PROPERTIES 
                       OUTPUT_NAME "projectname"
-                      CLEAN_DIRECT_OUPUT 1)
+                      CLEAN_DIRECT_OUTPUT 1)
                       
 ADD_LIBRARY(projectname_shared SHARED ${LIB_LIST} )
 SET_TARGET_PROPERTIES(projectname_shared PROPERTIES 
                       OUTPUT_NAME "projectname"
-                      CLEAN_DIRECT_OUPUT 1)
+                      CLEAN_DIRECT_OUTPUT 1)
                       
 INSTALL(FILES projectname.h DESTINATION include/projectname/)
 INSTALL(FILES authority.h DESTINATION include/projectname/)
