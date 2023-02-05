@@ -28,21 +28,11 @@ climits
 bits/stdc++.h
 -
 
-../src/lib/filename.cpp
+/home/xu736946693/Desktop/ProjectTemplate/src/lib/filename.cpp
 filename.h
-../src/lib/filename.h
+/home/xu736946693/Desktop/ProjectTemplate/src/lib/filename.h
 
-../src/lib/filename.h
+/home/xu736946693/Desktop/ProjectTemplate/src/lib/filename.h
 authority.h
--
-
-../src/lib/projectname.h
-authority.h
-../src/lib/authority.h
-filename.cpp
-../src/lib/filename.cpp
-
-/home/xu736946693/Desktop/ProjectTemplate/src/main.cpp
-projectname.h
 -
 

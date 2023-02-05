@@ -57,35 +57,35 @@ include bin/lib/CMakeFiles/projectname_static.dir/progress.make
 # Include the compile flags for this target's objects.
 include bin/lib/CMakeFiles/projectname_static.dir/flags.make
 
-bin/lib/CMakeFiles/projectname_static.dir/filename/filename.cpp.o: bin/lib/CMakeFiles/projectname_static.dir/flags.make
-bin/lib/CMakeFiles/projectname_static.dir/filename/filename.cpp.o: ../src/lib/filename/filename.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xu736946693/Desktop/ProjectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bin/lib/CMakeFiles/projectname_static.dir/filename/filename.cpp.o"
-	cd /home/xu736946693/Desktop/ProjectTemplate/build/bin/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projectname_static.dir/filename/filename.cpp.o -c /home/xu736946693/Desktop/ProjectTemplate/src/lib/filename/filename.cpp
+bin/lib/CMakeFiles/projectname_static.dir/filename.cpp.o: bin/lib/CMakeFiles/projectname_static.dir/flags.make
+bin/lib/CMakeFiles/projectname_static.dir/filename.cpp.o: ../src/lib/filename.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xu736946693/Desktop/ProjectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bin/lib/CMakeFiles/projectname_static.dir/filename.cpp.o"
+	cd /home/xu736946693/Desktop/ProjectTemplate/build/bin/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projectname_static.dir/filename.cpp.o -c /home/xu736946693/Desktop/ProjectTemplate/src/lib/filename.cpp
 
-bin/lib/CMakeFiles/projectname_static.dir/filename/filename.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projectname_static.dir/filename/filename.cpp.i"
-	cd /home/xu736946693/Desktop/ProjectTemplate/build/bin/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xu736946693/Desktop/ProjectTemplate/src/lib/filename/filename.cpp > CMakeFiles/projectname_static.dir/filename/filename.cpp.i
+bin/lib/CMakeFiles/projectname_static.dir/filename.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projectname_static.dir/filename.cpp.i"
+	cd /home/xu736946693/Desktop/ProjectTemplate/build/bin/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xu736946693/Desktop/ProjectTemplate/src/lib/filename.cpp > CMakeFiles/projectname_static.dir/filename.cpp.i
 
-bin/lib/CMakeFiles/projectname_static.dir/filename/filename.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projectname_static.dir/filename/filename.cpp.s"
-	cd /home/xu736946693/Desktop/ProjectTemplate/build/bin/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xu736946693/Desktop/ProjectTemplate/src/lib/filename/filename.cpp -o CMakeFiles/projectname_static.dir/filename/filename.cpp.s
+bin/lib/CMakeFiles/projectname_static.dir/filename.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projectname_static.dir/filename.cpp.s"
+	cd /home/xu736946693/Desktop/ProjectTemplate/build/bin/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xu736946693/Desktop/ProjectTemplate/src/lib/filename.cpp -o CMakeFiles/projectname_static.dir/filename.cpp.s
 
 # Object files for target projectname_static
 projectname_static_OBJECTS = \
-"CMakeFiles/projectname_static.dir/filename/filename.cpp.o"
+"CMakeFiles/projectname_static.dir/filename.cpp.o"
 
 # External object files for target projectname_static
 projectname_static_EXTERNAL_OBJECTS =
 
-bin/lib/libprojectname_static.a: bin/lib/CMakeFiles/projectname_static.dir/filename/filename.cpp.o
-bin/lib/libprojectname_static.a: bin/lib/CMakeFiles/projectname_static.dir/build.make
-bin/lib/libprojectname_static.a: bin/lib/CMakeFiles/projectname_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xu736946693/Desktop/ProjectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libprojectname_static.a"
+bin/lib/libprojectname.a: bin/lib/CMakeFiles/projectname_static.dir/filename.cpp.o
+bin/lib/libprojectname.a: bin/lib/CMakeFiles/projectname_static.dir/build.make
+bin/lib/libprojectname.a: bin/lib/CMakeFiles/projectname_static.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xu736946693/Desktop/ProjectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libprojectname.a"
 	cd /home/xu736946693/Desktop/ProjectTemplate/build/bin/lib && $(CMAKE_COMMAND) -P CMakeFiles/projectname_static.dir/cmake_clean_target.cmake
 	cd /home/xu736946693/Desktop/ProjectTemplate/build/bin/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projectname_static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-bin/lib/CMakeFiles/projectname_static.dir/build: bin/lib/libprojectname_static.a
+bin/lib/CMakeFiles/projectname_static.dir/build: bin/lib/libprojectname.a
 
 .PHONY : bin/lib/CMakeFiles/projectname_static.dir/build
 

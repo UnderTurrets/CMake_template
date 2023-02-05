@@ -2,8 +2,10 @@ cmake_minimum_required(VERSION 3.16)
 
 SET(LIB_LIST projectname.h
              authority.h
-             filename/filename.h
-             filename/filename.cpp    )
+             filename.h
+             filename.cpp    )
+             
+
              
 ADD_LIBRARY(projectname_static STATIC ${LIB_LIST} )
 SET_TARGET_PROPERTIES(projectname_static PROPERTIES 
@@ -17,8 +19,8 @@ SET_TARGET_PROPERTIES(projectname_shared PROPERTIES
                       
 INSTALL(FILES projectname.h DESTINATION include/projectname/)
 INSTALL(FILES authority.h DESTINATION include/projectname/)
-#INSTALL(FILES filename/filename.h DESTINATION include/projectname/)
-#INSTALL(FILES filename/filename.cpp DESTINATION include/projectname/)
+#INSTALL(FILES filename.h DESTINATION include/projectname/)
+#INSTALL(FILES filename.cpp DESTINATION include/projectname/)
 
 
 INSTALL(TARGETS projectname_static projectname_shared 

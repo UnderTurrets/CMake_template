@@ -186,35 +186,35 @@ projectname_static/fast:
 	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_static.dir/build.make bin/lib/CMakeFiles/projectname_static.dir/build
 .PHONY : projectname_static/fast
 
-filename/filename.o: filename/filename.cpp.o
+filename.o: filename.cpp.o
 
-.PHONY : filename/filename.o
+.PHONY : filename.o
 
 # target to build an object file
-filename/filename.cpp.o:
-	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_shared.dir/build.make bin/lib/CMakeFiles/projectname_shared.dir/filename/filename.cpp.o
-	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_static.dir/build.make bin/lib/CMakeFiles/projectname_static.dir/filename/filename.cpp.o
-.PHONY : filename/filename.cpp.o
+filename.cpp.o:
+	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_shared.dir/build.make bin/lib/CMakeFiles/projectname_shared.dir/filename.cpp.o
+	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_static.dir/build.make bin/lib/CMakeFiles/projectname_static.dir/filename.cpp.o
+.PHONY : filename.cpp.o
 
-filename/filename.i: filename/filename.cpp.i
+filename.i: filename.cpp.i
 
-.PHONY : filename/filename.i
+.PHONY : filename.i
 
 # target to preprocess a source file
-filename/filename.cpp.i:
-	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_shared.dir/build.make bin/lib/CMakeFiles/projectname_shared.dir/filename/filename.cpp.i
-	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_static.dir/build.make bin/lib/CMakeFiles/projectname_static.dir/filename/filename.cpp.i
-.PHONY : filename/filename.cpp.i
+filename.cpp.i:
+	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_shared.dir/build.make bin/lib/CMakeFiles/projectname_shared.dir/filename.cpp.i
+	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_static.dir/build.make bin/lib/CMakeFiles/projectname_static.dir/filename.cpp.i
+.PHONY : filename.cpp.i
 
-filename/filename.s: filename/filename.cpp.s
+filename.s: filename.cpp.s
 
-.PHONY : filename/filename.s
+.PHONY : filename.s
 
 # target to generate assembly for a file
-filename/filename.cpp.s:
-	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_shared.dir/build.make bin/lib/CMakeFiles/projectname_shared.dir/filename/filename.cpp.s
-	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_static.dir/build.make bin/lib/CMakeFiles/projectname_static.dir/filename/filename.cpp.s
-.PHONY : filename/filename.cpp.s
+filename.cpp.s:
+	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_shared.dir/build.make bin/lib/CMakeFiles/projectname_shared.dir/filename.cpp.s
+	cd /home/xu736946693/Desktop/ProjectTemplate/build && $(MAKE) -f bin/lib/CMakeFiles/projectname_static.dir/build.make bin/lib/CMakeFiles/projectname_static.dir/filename.cpp.s
+.PHONY : filename.cpp.s
 
 # Help Target
 help:
@@ -230,9 +230,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... projectname_shared"
 	@echo "... projectname_static"
-	@echo "... filename/filename.o"
-	@echo "... filename/filename.i"
-	@echo "... filename/filename.s"
+	@echo "... filename.o"
+	@echo "... filename.i"
+	@echo "... filename.s"
 .PHONY : help
 
 

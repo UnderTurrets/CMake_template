@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/projectname_shared.dir/filename/filename.cpp.o"
-  "libprojectname_shared.pdb"
-  "libprojectname_shared.so"
+  "CMakeFiles/projectname_shared.dir/filename.cpp.o"
+  "libprojectname.pdb"
+  "libprojectname.so"
 )
 
 # Per-language clean rules from dependency scanning.
