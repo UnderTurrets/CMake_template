@@ -8,10 +8,113 @@
 
 
 # 1.文件树和CMakeLists.txt一览
-![在这里插入图片描述](doc/READMEimgRes/a3bad4725ba94301b7cba7dd8209fea4.png)
-![工程目录下的CMakeLists.txt](doc/READMEimgRes/4157fd35b4b74ed4abeb0f47104fef42.png)
-![src目录下的CMakeLists.txt](doc/READMEimgRes/40b2ea19050941069a3ab41d66d0fdf7.png)
-![src/lib目录下的CMakeLists.txt](doc/READMEimgRes/8836961877de48e1ada55af7810b1457.png)
+- 文件树
+
+```powershell
+xu736946693@ubuntu:~/Desktop/CMake-template$ tree -L 3
+.
+├── build
+│   ├── bin
+│   │   ├── CMakeFiles
+│   │   ├── cmake_install.cmake
+│   │   ├── lib
+│   │   ├── main
+│   │   └── Makefile
+│   ├── CMakeCache.txt
+│   ├── CMakeFiles
+│   │   ├── 3.16.3
+│   │   ├── cmake.check_cache
+│   │   ├── CMakeDirectoryInformation.cmake
+│   │   ├── CMakeOutput.log
+│   │   ├── Makefile2
+│   │   ├── Makefile.cmake
+│   │   ├── progress.marks
+│   │   └── TargetDirectories.txt
+│   ├── cmake_install.cmake
+│   └── Makefile
+├── CMakeLists.txt
+├── COPYRIGHT
+├── doc
+│   └── READMEimgRes
+│       ├── 40b2ea19050941069a3ab41d66d0fdf7.png
+│       ├── 4157fd35b4b74ed4abeb0f47104fef42.png
+│       ├── 8836961877de48e1ada55af7810b1457.png
+│       └── a3bad4725ba94301b7cba7dd8209fea4.png
+├── README.md
+├── run.sh
+├── settings.zip
+└── src
+    ├── CMakeLists.txt
+    ├── lib
+    │   ├── authority.h
+    │   ├── CMakeLists.txt
+    │   ├── filename.cpp
+    │   ├── filename.h
+    │   └── projectname.h
+    └── main.cpp
+
+10 directories, 29 files
+
+```
+
+- 工程目录下的CMakeLists.txt
+
+```txt
+cmake_minimum_required(VERSION 3.16)
+
+PROJECT(projectname)
+
+set(CMAKE_CXX_STANDARD 17)
+ADD_SUBDIRECTORY(src bin)
+```
+- 源码目录下的CMakeLists.txt
+
+```txt
+cmake_minimum_required(VERSION 3.16)
+project(main)
+
+INCLUDE_DIRECTORIES(lib/)
+
+ADD_SUBDIRECTORY(lib)
+
+
+set(CMAKE_CXX_STANDARD 17)
+add_executable(main main.cpp)
+
+```
+
+- 可安装库目录下的CMakeLists.txt
+
+```txt
+cmake_minimum_required(VERSION 3.16)
+
+SET(LIB_LIST projectname.h
+             authority.h
+             filename.h
+             filename.cpp    )
+             
+
+             
+ADD_LIBRARY(projectname_static STATIC ${LIB_LIST} )
+SET_TARGET_PROPERTIES(projectname_static PROPERTIES 
+                      OUTPUT_NAME "projectname"
+                      CLEAN_DIRECT_OUTPUT 1)
+                      
+ADD_LIBRARY(projectname_shared SHARED ${LIB_LIST} )
+SET_TARGET_PROPERTIES(projectname_shared PROPERTIES 
+                      OUTPUT_NAME "projectname"
+                      CLEAN_DIRECT_OUTPUT 1)
+                      
+INSTALL(FILES projectname.h DESTINATION include/projectname/)
+INSTALL(FILES authority.h DESTINATION include/projectname/)
+#INSTALL(FILES filename.h DESTINATION include/projectname/)
+#INSTALL(FILES filename.cpp DESTINATION include/projectname/)
+
+
+INSTALL(TARGETS projectname_static projectname_shared 
+        LIBRARY DESTINATION lib/projectname/
+        ARCHIVE DESTINATION lib/projectname/ )                      
+```
 
 
 
