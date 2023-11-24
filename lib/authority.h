@@ -1,5 +1,4 @@
-#ifndef __authority_h__
-#define __authority_h__
+#pragma once
 
 
 #include <iomanip>
@@ -21,4 +20,3 @@ using namespace placeholders;
 
 
 
-#endif
