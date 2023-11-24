@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/authority.h
+iomanip
+-
+fstream
+-
+iostream
+-
+exception
+-
+memory
+-
+functional
+-
+exception
+-
+cmath
+-
+climits
+-
+bits/stdc++.h
+-
+
+/home/xu736946693/Desktop/CMake-template/lib/Module1/module1.cpp
+module1.h
+/home/xu736946693/Desktop/CMake-template/lib/Module1/module1.h
+
+/home/xu736946693/Desktop/CMake-template/lib/Module1/module1.h
+authority.h
+/home/xu736946693/Desktop/CMake-template/lib/Module1/authority.h
+
