@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/ProjectXX_exe.dir/main.cpp.o  -o ProjectXX_exe  libProjectXX.a 

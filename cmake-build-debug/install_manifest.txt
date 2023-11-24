@@ -1,9 +1,0 @@
-/usr/local/lib/ProjectXX-1.0/ProjectXXConfig.cmake
-/usr/local/lib/ProjectXX-1.0/ProjectXXConfigVersion.cmake
-/usr/local/include/ProjectXX-1.0/module1.h
-/usr/local/include/ProjectXX-1.0/authority.h
-/usr/local/include/ProjectXX-1.0/projectname.h
-/usr/local/lib/ProjectXX-1.0/libProjectXX.a
-/usr/local/bin/ProjectXX-1.0/ProjectXX_exe
-/usr/local/lib/ProjectXX-1.0/ProjectXX-1.0-targets.cmake
-/usr/local/lib/ProjectXX-1.0/ProjectXX-1.0-targets-noconfig.cmake

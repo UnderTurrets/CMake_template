@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.16)
-
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 17)
 # 设置库的名称
@@ -10,7 +9,7 @@ PROJECT(${LIB_NAME}_exe)
 set(version 1.0)
 # 拼接名字
 set(LIB_NAME_VERSION ${LIB_NAME}-${version})
-#设置安装位置，将头文件和库都安装到这个文章
+#设置安装位置，将头文件和库都安装到这个文章，默认安装到系统的/usr/local/
 set(CMAKE_INSTALL_PREFIX /usr/local/)
 
 # 依赖的外部库
@@ -38,12 +37,15 @@ file(GLOB_RECURSE include
         lib/Module1/*.h
         )
 
+
 # ----------------- 静态库 -----------------
 add_library(${LIB_NAME} STATIC ${source})
 target_link_libraries(${LIB_NAME} PUBLIC
         # 以下为静态库的外部依赖
         # ${OpenCV_LIBS}
         )
+# ----------------- 结束静态库的生成 -----------------
+
 
 # ----------------- 可执行文件 -----------------
 # 可执行文件生成

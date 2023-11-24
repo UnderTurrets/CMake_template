@@ -1,2 +1,0 @@
-/usr/bin/ar qc libProjectXX.a  CMakeFiles/ProjectXX.dir/lib/Module1/module1.cpp.o
-/usr/bin/ranlib libProjectXX.a
